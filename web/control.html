@@ -10,7 +10,7 @@
     <meta name="description" content="description here" />
     <meta name="keywords" content="keywords,here" />
     <link rel="stylesheet" href="./style.css" />
-   
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -51,7 +51,8 @@
         >
           <span
             class="text-base sm:text-lg justify-end font-medium text-red-100"
-            >HỆ THỐNG GIÁM SÁT VÀ ĐIỂU KHIỂN MÔI TRƯỜNG VƯỜN TRỒNG</span>
+            >HỆ THỐNG GIÁM SÁT VÀ ĐIỂU KHIỂN MÔI TRƯỜNG VƯỜN TRỒNG</span
+          >
         </div>
       </div>
     </nav>
@@ -73,7 +74,7 @@
               >
                 <i class="fas fa-chart-area pr-0 md:pr-3 text-blue-600"></i
                 ><span
-                  class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block"
+                  class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block"
                   >Trang chủ</span
                 >
               </a>
@@ -81,11 +82,11 @@
             <li class="mr-3 flex-1">
               <a
                 href="#"
-                class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-blue-600 "
+                class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-blue-600"
               >
                 <i class="fas fa-tasks pr-0 md:pr-3"></i
                 ><span
-                  class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block"
+                  class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block"
                   >Điều khiển</span
                 >
               </a>
@@ -111,22 +112,20 @@
                 <div class="flex-shrink pr-4">
                   <div class="rounded-full p-5 bg-green-600">
                     <i class="fas fa-seedling fa-2x fa-inverse"></i>
-                  </div>                  
+                  </div>
                 </div>
 
                 <div class="flex-1 text-right md:text-center">
-                  <h5 class="font-bold uppercase text-gray-600">
-                   Độ ẩm đất Khu 1
-                  </h5>
-
-                  <div
-                    class="font-bold text-3xl flex justify-end lg:justify-center"
+                  <label
+                    for="check"
+                    class="bg-gray-100 cursor-pointer relative w-20 h-10 rounded-full"
                   >
-                    <h3 id="heart_1">00</h3>
-                    <span class="text-blue-500 ml-1">
-                     % 
+                    <input type="checkbox" id="check" class="sr-only peer" />
+                    <span
+                      class="w-2/5 h-4/5 bg-blue-300 absolute rounded-full left-1 top-1 peer-checked:bg-blue-600 peer-checked:left-11 transition-all duration-500"
+                      >....
                     </span>
-                  </div>
+                  </label>
                 </div>
               </div>
             </div>
@@ -144,17 +143,7 @@
                     <i class="fas fa-tint fa-2x fa-inverse"></i>
                   </div>
                 </div>
-                <div class="flex-1 text-right md:text-center">
-                  <h5 class="font-bold uppercase text-gray-600">
-                    Độ ẩm khu 1
-                  </h5>
-                  <div
-                    class="font-bold text-3xl flex justify-end lg:justify-center"
-                  >
-                    <h3 id="spo2_1" class="mr-1">00</h3>
-                    <span class="text-blue-500">% </span>
-                  </div>
-                </div>
+                <div class="flex-1 text-right md:text-center">...........</div>
               </div>
             </div>
             <!--/Metric Card-->
@@ -163,7 +152,7 @@
           <div class="w-full md:w-1/2 xl:w-1/4 p-6">
             <!--Metric Card  3-->
             <div
-                class="bg-gradient-to-b from-red-200 to-red-100 border-b-4 border-red-500 rounded-lg shadow-xl p-5"
+              class="bg-gradient-to-b from-red-200 to-red-100 border-b-4 border-red-500 rounded-lg shadow-xl p-5"
             >
               <div class="flex flex-row items-center">
                 <div class="flex-shrink pr-4">
@@ -172,16 +161,7 @@
                   </div>
                 </div>
                 <div class="flex-1 text-right md:text-center">
-                  <h5 class="font-bold uppercase text-gray-600">
-                    Nhiệt độ Khu 1
-                  </h5>
-
-                  <div
-                    class="font-bold text-3xl flex justify-end lg:justify-center"
-                  >
-                    <h3 id="body_temp_1" class="mr-1">00</h3>
-                    <span class="text-red-500">°C</span>
-                  </div>
+                  ...................
                 </div>
               </div>
             </div>
@@ -191,7 +171,7 @@
           <div class="w-full md:w-1/2 xl:w-1/4 p-6">
             <!--Metric Card  4-->
             <div
-            class="bg-gradient-to-b from-blue-200 to-blue-100 border-b-4 border-blue-500 rounded-lg shadow-xl p-5"
+              class="bg-gradient-to-b from-blue-200 to-blue-100 border-b-4 border-blue-500 rounded-lg shadow-xl p-5"
             >
               <div class="flex flex-row items-center">
                 <div class="flex-shrink pr-4">
@@ -200,15 +180,7 @@
                   </div>
                 </div>
                 <div class="flex-1 text-right md:text-center">
-                  <h5 class="font-bold uppercase text-gray-600">
-                    ánh sáng Khu 1
-                  </h5>
-                  <div
-                    class="font-bold text-3xl flex justify-end lg:justify-center"
-                  >
-                    <h3 id="Environment_temp_1" class="mr-1">00</h3>
-                    <span class="text-indigo-700">LX</span>
-                  </div>
+                  ..........................
                 </div>
               </div>
             </div>
@@ -227,17 +199,7 @@
                   </div>
                 </div>
                 <div class="flex-1 text-right md:text-center">
-                  <h5 class="font-bold uppercase text-gray-600">
-                    Độ ẩm đất khu 2
-                  </h5>
-                  <div
-                    class="font-bold text-3xl flex justify-end lg:justify-center"
-                  >
-                    <h3 id="heart_2">00</h3>
-                    <span class="text-blue-500 ml-1">
-                      %
-                    </span>
-                  </div>
+                  ...........................
                 </div>
               </div>
             </div>
@@ -247,7 +209,7 @@
           <div class="w-full md:w-1/2 xl:w-1/4 p-6">
             <!--Metric Card  6-->
             <div
-               class="bg-gradient-to-b from-pink-300 to-blue-200 border-b-4 border-pink-500 rounded-lg shadow-xl p-5"
+              class="bg-gradient-to-b from-pink-300 to-blue-200 border-b-4 border-pink-500 rounded-lg shadow-xl p-5"
             >
               <div class="flex flex-row items-center">
                 <div class="flex-shrink pr-4">
@@ -257,16 +219,7 @@
                   </div>
                 </div>
                 <div class="flex-1 text-right md:text-center">
-                  <h5 class="font-bold uppercase text-gray-600">
-                   Độ ẩm khu 2
-                  </h5>
-                  <div
-                    class="font-bold text-3xl flex justify-end lg:justify-center"
-                  >
-                    <h3 id="spo2_2" class="mr-1">00</h3>
-                    <span class="text-blue-500">% </span>
-                  </div>
-                  </h3>
+                  .................
                 </div>
               </div>
             </div>
@@ -285,15 +238,7 @@
                   </div>
                 </div>
                 <div class="flex-1 text-right md:text-center">
-                  <h5 class="font-bold uppercase text-gray-600">
-                    nhiệt độ khu 2
-                  </h5>
-                  <div
-                    class="font-bold text-3xl flex justify-end lg:justify-center"
-                  >
-                    <h3 id="body_temp_2" class="mr-1">00</h3>
-                    <span class="text-red-500">°C</span>
-                  </div>
+                  .....................
                 </div>
               </div>
             </div>
@@ -312,15 +257,7 @@
                   </div>
                 </div>
                 <div class="flex-1 text-right md:text-center">
-                  <h5 class="font-bold uppercase text-gray-600">
-                    Ánh sáng khu 2
-                  </h5>
-                  <div
-                    class="font-bold text-3xl flex justify-end lg:justify-center"
-                  >
-                    <h3 id="Environment_temp_2" class="mr-1">00</h3>
-                    <span class="text-indigo-700">LX</span>
-                  </div>
+                  ..................
                 </div>
               </div>
             </div>
@@ -328,37 +265,48 @@
           </div>
         </div>
 
-
-
         <div class="flex flex-row flex-wrap flex-grow mt-2">
-          
           <div class="w-full md:w-1/2 xl:w-1/2 p-6">
             <!--Graph Card-->
             <div class="bg-white border-transparent rounded-lg shadow-xl">
-              <div class="bg-gradient-to-b from-gray-300 to-gray-100 uppercase text-gray-800 border-b-2 border-gray-300 rounded-tl-lg rounded-tr-lg p-2">
-                <h5 class="font-bold uppercase text-gray-600">Bảng theo dõi môi trường khu 1</h5>
+              <div
+                class="bg-gradient-to-b from-gray-300 to-gray-100 uppercase text-gray-800 border-b-2 border-gray-300 rounded-tl-lg rounded-tr-lg p-2"
+              >
+                <h5 class="font-bold uppercase text-gray-600">
+                  Bảng theo dõi môi trường khu 1
+                </h5>
               </div>
               <div class="p-5">
-                <canvas id="environmentKhu1" width="undefined" height="undefined"></canvas>
+                <canvas
+                  id="environmentKhu1"
+                  width="undefined"
+                  height="undefined"
+                ></canvas>
               </div>
             </div>
             <!--/Graph Card-->
           </div>
 
-
           <div class="w-full md:w-1/2 xl:w-1/2 p-6">
             <!--Graph Card-->
             <div class="bg-white border-transparent rounded-lg shadow-xl">
-              <div class="bg-gradient-to-b from-gray-300 to-gray-100 uppercase text-gray-800 border-b-2 border-gray-300 rounded-tl-lg rounded-tr-lg p-2">
-                <h5 class="font-bold uppercase text-gray-600">Bảng theo dõi môi trường khu 2</h5>
+              <div
+                class="bg-gradient-to-b from-gray-300 to-gray-100 uppercase text-gray-800 border-b-2 border-gray-300 rounded-tl-lg rounded-tr-lg p-2"
+              >
+                <h5 class="font-bold uppercase text-gray-600">
+                  Bảng theo dõi môi trường khu 2
+                </h5>
               </div>
               <div class="p-5">
-                <canvas id="environmentKhu2" width="undefined" height="undefined"></canvas>
+                <canvas
+                  id="environmentKhu2"
+                  width="undefined"
+                  height="undefined"
+                ></canvas>
               </div>
             </div>
             <!--/Graph Card-->
           </div>
-        
         </div>
       </div>
     </div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Switch</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-900">
+    <!-- Công tắc Bật/Tắt -->
+    <label
+      for="check"
+      class="bg-gray-100 cursor-pointer relative w-20 h-10 rounded-full"
+    >
+      <input type="checkbox" id="check" class="sr-only peer" />
+      <span
+        class="w-2/5 h-4/5 bg-blue-300 absolute rounded-full left-1 top-1 peer-checked:bg-blue-600 peer-checked:left-11 transition-all duration-500"
+      >
+      </span>
+    </label>
+  </body>
+</html>
