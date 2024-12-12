@@ -162,3 +162,92 @@ setInterval(() => {
   addData(newValueHumidity2, myChartKhu2, 0); // Cập nhật độ ẩm khu 2
   addDataTemperature(newValueTemperature2, myChartKhu2); // Cập nhật nhiệt độ khu 2
 }, 3000); // Cập nhật giá trị mỗi 1,5 giây
+
+// Mảng lưu các thông tin của công tắc
+const toggleConfig = [
+  {
+    toggleId: "check",
+    backgroundId: "toggleBackground",
+    buttonId: "toggleButton",
+    value: 0,
+  },
+  {
+    toggleId: "check2",
+    backgroundId: "toggleBackground2",
+    buttonId: "toggleButton2",
+    value: 0,
+  },
+  {
+    toggleId: "check3",
+    backgroundId: "toggleBackground3",
+    buttonId: "toggleButton3",
+    value: 0,
+  },
+  {
+    toggleId: "check4",
+    backgroundId: "toggleBackground4",
+    buttonId: "toggleButton4",
+    value: 0,
+  },
+  {
+    toggleId: "check5",
+    backgroundId: "toggleBackground5",
+    buttonId: "toggleButton5",
+    value: 0,
+  },
+  {
+    toggleId: "check6",
+    backgroundId: "toggleBackground6",
+    buttonId: "toggleButton6",
+    value: 0,
+  },
+  {
+    toggleId: "check7",
+    backgroundId: "toggleBackground7",
+    buttonId: "toggleButton7",
+    value: 0,
+  },
+  {
+    toggleId: "check8",
+    backgroundId: "toggleBackground8",
+    buttonId: "toggleButton8",
+    value: 0,
+  },
+];
+
+// Hàm để thiết lập công tắc
+function setupToggle(
+  toggleId,
+  toggleBackgroundId,
+  toggleButtonId,
+  toggleValue
+) {
+  const checkbox = document.getElementById(toggleId);
+  const toggleBackground = document.getElementById(toggleBackgroundId);
+  const toggleButton = document.getElementById(toggleButtonId);
+
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      toggleButton.style.transform = "translateX(40px)";
+      toggleBackground.style.backgroundColor = "#16a34a";
+      toggleButton.style.backgroundColor = "#064e3b";
+      toggleValue = 1; // Gán giá trị 1 khi bật
+    } else {
+      toggleButton.style.transform = "translateX(0)";
+      toggleBackground.style.backgroundColor = "#d1d5db";
+      toggleButton.style.backgroundColor = "#9ca3af";
+      toggleValue = 0; // Gán giá trị 0 khi tắt
+    }
+    console.log(`Giá trị công tắc ${toggleId}:`, toggleValue);
+  });
+}
+
+// Duyệt qua mảng công tắc để khởi tạo tất cả công tắc
+toggleConfig.forEach((config) => {
+  setupToggle(
+    config.toggleId,
+    config.backgroundId,
+    config.buttonId,
+    config.value
+  );
+});
